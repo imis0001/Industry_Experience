@@ -366,23 +366,25 @@ export const ch = {
   quiz: {
     title: "知识问答",
     intro:
-      '  Welcome to our "Behavior Self-Assessment" and "Bushfire Knowledge Quiz" for Forest Fire Prevention. This interactive tool is designed to enhance your understanding of how everyday behaviors can influence the risk of forest fires. Through a carefully constructed series of questions and engaging hypothetical scenarios, our assessment aims to heighten your awareness of the connections between individual actions and environmental impact. Moreover, it encourages the adoption of more sustainable practices to help mitigate these risks. Join us in making a positive difference for our forests and future!',
+      '  欢迎参加我们的“行为自我评估”和“森林火灾知识测验”，旨在防止森林火灾。这个互动工具旨在加深您对日常行为如何影响森林火灾风险的理解。通过一系列精心构建的问题和引人入胜的假设场景，我们的评估旨在提高您对个人行为与环境影响之间联系的意识。此外，它鼓励采用更可持续的做法来帮助减轻这些风险。加入我们，为我们的森林和未来做出积极的改变吧！',
     theme: [
-      { title: "Behavior Self-Assessment" },
+      { title: "行为自我评估" },
       {
-        title: "Bushfire knowledge quiz",
+        title: "森林大火知识测验",
       },
     ],
     q: "题目",
     back: "返回",
     qtheme: "主题",
     progess: "进度",
-    submit: "提交",
+    submit: "下一题",
     again: "再试一次",
     right: "正确！",
     wrong: "答错了！",
     congratulation: "太好了，我们答对了所有的问题！",
     finish: "恭喜！你通过了测验！",
+    empty: "必须选择一个选项哦！",
+    previous: "上一题",
   },
   about: {
     title: "关于我们",

@@ -27,6 +27,11 @@ const finish = () => {
   message.success(text.value.finish);
 };
 
+const empty = () =>{
+  //console.log("Show Empty!!!!");
+  message.warning(text.value.empty);
+};
+
 const quizList = ref([]);
 const isFinish = ref(false);
 const quizIndex = ref(undefined);
@@ -49,11 +54,13 @@ watch(quizIndex, (newVal) => {
 
 const onSubmit = () => {
   console.log(quizList.value[curIndex.value].options);
-
-  if (quizList.value[curIndex.value].options[value.value].isCorrect) {
+  if (value.value === null){
+    empty();
+  } else{
+    if (quizList.value[curIndex.value].options[value.value].isCorrect) {
     if (curIndex.value < quizList.value.length - 1) {
       value.value = null;
-      // right();
+      right();
       curIndex.value += 1;
     } else {
       finish();
@@ -61,11 +68,19 @@ const onSubmit = () => {
   } else {
     if (curIndex.value < quizList.value.length - 1) {
       value.value = null;
+      error();
       final.value -= 20;
       curIndex.value += 1;
     } else {
       finish();
     }
+  }
+  } 
+};
+
+const onPrevious = () => {
+  if (curIndex.value > 0) {
+    curIndex.value -= 1;
   }
 };
 
@@ -153,11 +168,16 @@ function handleAgainClick() {
           </a-typography-title>
 
           <div class="question-container">
-            <a-card
+            <!-- <a-card
               :title="`${text.q}${curIndex + 1}: ${
                 quizList[curIndex].content
               }?`"
               class="quesiton-card"
+            > -->
+            <a-card 
+              :title="`${text.q}${curIndex + 1}: ${quizList[curIndex].content}?`" 
+              class="question-card" 
+              style="white-space: pre-wrap; overflow: visible;"
             >
               <a-radio-group v-model:value="value">
                 <a-radio
@@ -170,9 +190,14 @@ function handleAgainClick() {
                 </a-radio>
               </a-radio-group>
             </a-card>
-            <a-button class="submit" type="primary" v-on:click="onSubmit">
-              {{ text.submit }}
-            </a-button>
+            <div class="button-container">
+              <a-button class="previous" type="primary" v-if="curIndex > 0" v-on:click="onPrevious">
+                {{ text.previous }}
+              </a-button>
+              <a-button class="submit" type="primary" v-on:click="onSubmit">
+                {{ text.submit }}
+              </a-button>
+            </div>
           </div>
         </div>
         <a-result
@@ -265,5 +290,18 @@ function handleAgainClick() {
   position: absolute;
   height: 100%;
   width: 100%;
+}
+.submit {
+  margin-right: 20px; 
+  margin-left: 20px;
+}
+.previous {
+  background-color: #d9d9d9; /* 灰色背景 */
+  color: #595959; /* 较深的灰色文本，以保持良好的可读性 */
+  border-color: #d9d9d9; /* 灰色边框 */
+  margin-left: 20px; 
+  margin-right: 20px;
+  margin-left: 20px; 
+  margin-right: 20px;
 }
 </style>
