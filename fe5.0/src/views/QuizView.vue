@@ -24,6 +24,7 @@ const text = computed(() => store.state.lan.quiz);
 .quiz-header {
   width: 100%;
   height: 30vh;
+  /* background-color: #759f98; */
   background-color: #364d79;
   display: flex;
   flex-direction: column;

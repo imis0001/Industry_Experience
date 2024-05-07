@@ -49,18 +49,18 @@ const data = ref([
     value: 0,
     title: "Hectares",
     payload: {
-      content: "5,500,000",
+      content: "1,200,000",
       intro:
-        "-	About 7% (5.5 million hectares) of NSW was burnt during the prolonged 2019–20 Black Summer fire season.",
+        "-	Around 1.2 million hectares of state forests, parks and reserves were burnt in the bushfires, affecting 49 state forests and 98 parks and reserves.",
     },
   },
   {
     value: 1,
     title: "Koalas",
     payload: {
-      content: "41,000+",
+      content: "11,000+",
       intro:
-        "-	The worst losses were on Kangaroo Island in South Australia, where the conservation group estimates more than 41,000 koalas were killed or harmed by the ferocious fires. More than 11,000 were affected in the state of Victoria, nearly 8,000 in New South Wales (NSW), and nearly 900 in Queensland.",
+        "-	More than 11,000 Koalas were affected in the state of Victoria",
     },
   },
   {
@@ -76,9 +76,9 @@ const data = ref([
     value: 3,
     title: "CO2",
     payload: {
-      content: "178.6 ± 13.6 Tg",
+      content: "1.76 billion tons ",
       intro:
-        "-	The 2019–2020 bushfires burned a total of 112.3 Tg biomass and released 178.6 ± 13.6 Tg CO2 (carbon dioxide)",
+        "-	Gradually increasing since 2000, carbon dioxide emissions from wildfires peaked drastically in 2021 to a record high of 1.76 billion tons",
     },
   },
 ]);
@@ -118,7 +118,7 @@ function onEntranceClose() {
               </a-button>
             </a-typography>
           </div> -->
-          <a-carousel autoplay>
+          <!-- <a-carousel autoplay> -->
             <div class="image-warp">
               <div class="home-intro">
                 <a-typography class="home-intro-content">
@@ -126,10 +126,11 @@ function onEntranceClose() {
                     Save Forest, Save the Future
                   </a-typography-title>
                   <a-typography-title :level="4" style="color: white">
-                    Approximately 12 million hectares of forest are destroyed by
-                    bushfire each year.
+                    <!-- Approximately 12 million hectares of forest are destroyed by
+                    bushfire each year. -->
+                    Join us in exploring and protecting Victoria's forest ！
                   </a-typography-title>
-                  <a-typography-title :level="4" style="color: white">
+                  <!-- <a-typography-title :level="4" style="color: white">
                     Our dashboard will assist you in finding the safest hiking
                     areas, allowing you to enjoy outdoor activities worry-free.
                   </a-typography-title>
@@ -139,12 +140,12 @@ function onEntranceClose() {
                     v-on:click="router.push('/dashboard')"
                   >
                     Dashboard
-                  </a-button>
+                  </a-button> -->
                 </a-typography>
               </div>
               <img class="image" src="../assets/img/home0.jpeg" alt="" />
             </div>
-            <div class="image-warp">
+            <!-- <div class="image-warp">
               <div class="home-intro">
                 <a-typography class="home-intro-content">
                   <a-typography-title style="color: white">
@@ -254,8 +255,8 @@ function onEntranceClose() {
                 </a-typography>
               </div>
               <img class="image" src="../assets/img/home5.webp" alt="" />
-            </div>
-          </a-carousel>
+            </div> -->
+          <!-- </a-carousel> -->
           <a-drawer
             height="50%"
             title=""

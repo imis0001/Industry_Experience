@@ -92,7 +92,7 @@ getNewsData(url.value);
           </template>
           <a-list-item-meta :description="item.description">
             <template #title>
-              <a :href="item.href">{{ item.title }}</a>
+              <div :href="item.href" target="_blank">{{ item.title }}</div>
             </template>
             <template #avatar><a-avatar :src="item.avatar" /></template>
           </a-list-item-meta>

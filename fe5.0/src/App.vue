@@ -56,7 +56,7 @@ function handleLanClick(lan) {
         <div class="logo-imgae">
           <img
             height="100%"
-            src="./assets/img/logo.png"
+            src="./assets/img/campsafevic333.png"
             alt=""
             @click="handleLogoClick"
           />
@@ -104,6 +104,32 @@ function handleLanClick(lan) {
   background: #759f98;
 }
 .logo {
+  position: relative; /* 或 absolute，取决于其在导航栏中的需要 */
+  height: 96px; /* 限制高度 */
+  width: 96px; /* 限制宽度 */
+  cursor: pointer;
+}
+
+.logo-imgae {
+  position: absolute;
+  top: 0;  /* 确保绝对定位从容器顶部开始 */
+  left: 0; /* 确保绝对定位从容器左侧开始 */
+  height: 100%;  /* 完全填充高度 */
+  width: 100%;   /* 完全填充宽度 */
+  z-index: 1000;
+  background-color: #f4ecdc;
+  display: flex;    /* 使用flex布局 */
+  align-items: center; /* 垂直居中 */
+  justify-content: center; /* 水平居中 */
+}
+
+.logo-imgae img {
+  object-fit: contain;
+  max-height: 100%; /* 确保图像不超过容器高度 */
+  max-width: 100%; /* 确保图像不超过容器宽度 */
+}
+
+/* .logo {
   position: relative;
   height: 100%;
   width: 96px;
@@ -115,7 +141,7 @@ function handleLanClick(lan) {
   width: 96px;
   z-index: 1000;
   background-color: #97bd3d;
-}
+} */
 .menu {
   flex: 1;
   background-color: #759f98;

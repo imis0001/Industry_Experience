@@ -10,7 +10,7 @@ import pic1 from "../assets/img/home1.jpeg"
 import pic2 from "../assets/img/home2.jpeg"
 import pic3 from "../assets/img/home3.jpeg"
 import pic4 from "../assets/img/home4.jpeg"
-import logo from "../assets/img/logo.jpeg"
+import logo from "../assets/img/campsafevic333.png"
 
 import 'swiper/css';
 import 'swiper/css/bundle';
