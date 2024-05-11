@@ -510,7 +510,7 @@ function onEntranceClose() {
                       <div class="card-cover">
                         <img
                           class="card-cover-image"
-                          src="../assets/img/information/heateave.jpeg"
+                          src="../assets/img/information/heatwawe.jpeg"
                         />
                       </div>
                     </template>
@@ -525,7 +525,7 @@ function onEntranceClose() {
                       <div class="card-cover">
                         <img
                           class="card-cover-image"
-                          src="../assets/img/information/Heateave.jpeg"
+                          src="../assets/img/information/heatwawe.jpeg"
                         />
                       </div>
                     </template>
@@ -694,7 +694,7 @@ function onEntranceClose() {
   >
     <a-typography class="home-modal-article">
       <div class="home-modal-content">
-        <img width="100%" style="flex: 1" src="../assets/img/information/Heateave.jpeg" />
+        <img width="100%" style="flex: 1" src="../assets/img/information/heatwawe.jpeg" />
         <a-typography-paragraph>
           {{ text.card[2].p1 }}
         </a-typography-paragraph>
