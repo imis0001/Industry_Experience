@@ -1,0 +1,12 @@
+Latitude,Longitude,Source,Station ID,Perimeter,Financial Year,ACT,NSW,NT,QLD,TAS,VIC,WA,Reason,Deaths,Age Range,"Death Rate per 100,000",Category,Description
+-35.152,141.257,Unknown,414001.0,20364.0,,,,,,,,,,,,,,
+,,,,,2011,0.0,48.0,5.0,41.0,0.0,2.0,0.0,,,,,,
+,,,,,2012,0.0,7.0,3.0,0.0,3.0,1.0,0.0,,,,,,
+,,,,,,,,,,,,,Another's decision,20.0,,,,
+,,,,,,,,,,,,,Deliberately entered,15.0,,,,
+,,,,,,,,,,,,,No warning,5.0,,,,
+,,,,,,,,,,,,,Unknown,10.0,,,,
+,,,,,,,,,,,,,,,0-4,0.05,,
+,,,,,,,,,,,,,,,5-10,0.03,,
+,,,,,,,,,,,,,,,,,Mortality by Age Group,Deaths categorized by age during heatwaves
+,,,,,,,,,,,,,,,,,Emergency Visit Reasons,Reasons for emergency calls during heatwaves

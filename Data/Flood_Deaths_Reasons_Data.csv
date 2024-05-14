@@ -1,0 +1,12 @@
+State,Reason,Deaths
+NSW,Deliberately entered,10
+NSW,No warning,5
+NSW,Another's decision,0
+NSW,Unknown,5
+QLD,Deliberately entered,15
+QLD,No warning,5
+QLD,Another's decision,5
+QLD,Unknown,0
+VIC,Deliberately entered,0
+VIC,No warning,5
+VIC,Another's decision,5

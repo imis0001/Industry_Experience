@@ -1,0 +1,19 @@
+State,Circumstance,Deaths
+NSW,In/near vehicle,5
+NSW,In house,10
+NSW,On foot,5
+NSW,Fell out of watercraft,5
+NSW,On/in water,0
+NSW,Unknown,0
+QLD,In/near vehicle,15
+QLD,In house,5
+QLD,On foot,0
+QLD,Fell out of watercraft,0
+QLD,On/in water,5
+QLD,Unknown,0
+VIC,In/near vehicle,10
+VIC,In house,5
+VIC,On foot,0
+VIC,Fell out of watercraft,0
+VIC,On/in water,0
+VIC,Unknown,0
