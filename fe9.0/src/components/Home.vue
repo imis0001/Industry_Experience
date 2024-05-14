@@ -858,7 +858,7 @@ getNewsData(url.value);
         <img
           width="100%"
           style="flex: 1"
-          src="../assets/img/information/Heateave.jpeg"
+          src="../assets/img/information/heateave.jpeg"
         />
         <a-typography-paragraph>
           {{ text.card[2].p1 }}
